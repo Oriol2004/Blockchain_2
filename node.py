@@ -18,7 +18,7 @@ def get_node_ui():
 #Funktion um HTMl File "network" zu laden
 @app.route("/network", methods=["GET"])
 def get_network_ui():
-    return send_from_directory("ui", "network.html")
+    return send_from_directory("webpage", "network.html")
 
 #Funktion um eine Wallet zu kreieren und Blockchain zu starten
 @app.route("/wallet", methods=["POST"])
