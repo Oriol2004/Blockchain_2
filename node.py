@@ -13,7 +13,7 @@ CORS(app)
 #Funktion um HTML File "node" zu laden
 @app.route("/", methods=["GET"])
 def get_node_ui():
-    return send_from_directory("ui", "node.html")
+    return send_from_directory("webpage", "node.html")
 
 #Funktion um HTMl File "network" zu laden
 @app.route("/network", methods=["GET"])
